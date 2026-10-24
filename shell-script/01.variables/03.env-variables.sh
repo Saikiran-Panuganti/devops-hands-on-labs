@@ -1,34 +1,18 @@
 
 #!/bin/bash
 
-# Environment variables are variables that store information about the system or user and make that information available to processes and programs.
-# $0 - Name of the script
-echo "Script name: $0"
-
-# $1 and $2 - First and second arguments
-echo "First argument: $1"
-echo "Second argument: $2"
-
-# $@ - All arguments passed to the script
-echo "All arguments: $@"
-
-# $# - Total number of arguments
-echo "Number of arguments: $#"
-
-# $$ - Process ID of the current script
-echo "Script process ID: $$"
-
-# $USER - Current username
+# Environment variables provide information about the system or user to processes and programs.
+# USER commonly contains the username of the account running the script.
 echo "Current user: $USER"
 
-# $HOME - Home directory of the current user
+# HOME is the current user's home directory, often used as the base for user-specific files.
 echo "Home directory: $HOME"
 
-# $PWD - Current working directory
+# PWD is the current working directory from which the script is running.
 echo "Current directory: $PWD"
 
-# $? - Exit status of the previous command
-echo "Exit status: $?"
+# PATH is a colon-separated list of directories searched when running a command.
+echo "Command search path: $PATH"
 
-# $SECONDS - Seconds elapsed since the script started
-echo "Script running time: $SECONDS seconds"
+# SHELL commonly contains the path to the user's configured login shell.
+echo "Configured shell: $SHELL"
